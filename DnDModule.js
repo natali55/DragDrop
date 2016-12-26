@@ -88,7 +88,7 @@ var DnDModule = (function(){
   };
   var findDroppable = function(event) {
       //hide draggedElement to be able to see element under it
-      var elem
+      var elem;
       dragObject.draggedElement.hidden = true;
       dragObject.draggedElement.style.zIndex = -5;
   
