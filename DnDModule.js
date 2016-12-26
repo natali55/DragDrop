@@ -160,12 +160,15 @@ var DnDModule = (function(){
       return false;
   };
   var isElenemtInArr = function(el, arr) {
-    var str = arr.join(" ");
+    if(arr) {
+           var str = arr.join(" ");
     el = el.toString().toLowerCase();
     console.log(el);
     return str.indexOf(el)!=-1? true: false;
+       } else {
+       returne false}
     
-  }
+  };
   
   //here go public methods
   exports = {
