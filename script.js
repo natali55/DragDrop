@@ -1,0 +1,11 @@
+var draggable = DnDModule.Draggable();
+var droppable = DnDModule.Droppable();
+var onMouseDown = draggable.onMouseDown;
+var onMouseMove = draggable.onMouseMove;
+var onMouseUp = droppable.onMouseUp;
+document.onmousedown = onMouseDown;
+document.onmousemove = onMouseMove;
+document.onmouseup = onMouseUp;
+draggable.makeConstrained(false);
+draggable.makeReversable(true);
+droppable.notAllowedElements("span");

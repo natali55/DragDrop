@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+    <link rel="stylesheet" href="style.css">
+    
+  
+  </head>
+
+  <body>
+    <!-- here go block with draggable elements-->
+    <div class="drag-wrapper drag-constrain">
+      <div class="draggable"><header>A</header></div>
+      <div class="draggable"><header>B</header></div>
+      <div class="draggable"><header>C</header></div>
+      <span class="draggable">span</span>
+    </div>
+    <div class="info"> <p> Drop here</p>
+      <div class="droppable">
+      </div>
+    </div>
+
+     <div> Some div with information</div>
+       <script src="DnDModule.js"></script>
+       <script src="script.js"></script>
+  </body>
+
+</html>
