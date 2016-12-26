@@ -166,7 +166,7 @@ var DnDModule = (function(){
     console.log(el);
     return str.indexOf(el)!=-1? true: false;
        } else {
-       returne false}
+       return false}
     
   };
   
